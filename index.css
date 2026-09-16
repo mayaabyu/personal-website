@@ -1,0 +1,168 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* navgation components */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+a{
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(165, 163, 163);
+}
+
+.logo-text{
+    color: #6f4161;
+    font-size: 30px;
+    margin-top: 20px;
+ }
+
+.logo-text:hover{
+    color: #6f4161;
+}
+
+
+.onpage-link{
+     text-decoration: underline;
+}
+
+.onpage-link:hover{
+     text-decoration: underline;
+ }
+
+.connect-link{
+     color: rgb(108, 41, 215);
+  }
+
+  .connect-link:hover{
+     color: rgb(108, 41, 215);
+
+  }
+
+  
+/* hero section */
+
+ .intro-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ .intro-text{
+     padding: 20px;
+     align-self: center;
+ }
+
+h5{
+    font: italic;
+    color: rgb(208, 208, 208);
+    
+}
+
+h1{
+    color: white;
+    font-weight: bolder;
+
+}
+
+strong{
+    color: rgb(79, 13, 171);
+}
+
+h3{
+    color: rgb(144, 143, 143);
+}
+
+.view-prompt-btn{
+    background-color: rgb(84, 39, 176);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.view-prompt-btn a{
+    color: white;
+    font-size: 15px;
+}
+
+.view-prompt-btn a:hover{
+    color: white;
+}
+
+.view-prompt-btn:hover{
+    background-color:   rgb(72, 36, 146);
+}
+
+.about-prompt-btn{
+    background-color: grey;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.about-prompt-btn:hover{
+    background-color: rgb(108, 107, 107);
+}
+
+.about-prompt-btn a{
+    color: white;
+    font-size: 15px;
+}
+
+.about-prompt-btn a:hover{
+    color: white;
+}
+
+
+
+/* footer section */
+
+.footer-components{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    color: gray;
+}
+
+.links a{
+    color: #6f4161;
+}
+
+.socials-link img{
+
+    width: 35px;
+    height: 35px;
+}

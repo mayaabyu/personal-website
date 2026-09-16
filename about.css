@@ -1,0 +1,66 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* navgation */
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+a{
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(165, 163, 163);
+}
+
+.logo-text{
+    color: #6f4161;
+    font-size: 30px;
+    margin-top: 20px;
+ }
+
+.logo-text:hover{
+    color: #6f4161;
+}
+
+
+.onpage-link{
+    
+    text-decoration: underline;
+}
+
+.onpage-link:hover{
+    color: rgb(86, 17, 196);
+    text-decoration: underline;
+ }
+
+ .connect-link{
+     color: rgb(108, 41, 215);
+  }
+
+  .connect-link:hover{
+     color: rgb(108, 41, 215);
+
+  }
+
+
+  
