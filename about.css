@@ -1,4 +1,4 @@
-*{
+ *{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -6,61 +6,277 @@ body{
     background-color: black;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
-/* navgation */
-nav{
+/* ========= navgation bar ======== */
+ nav{
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    justify-content: space-around;
+    justify-content: space-between;
+     padding: 25px 8%;
+     align-items: center;
 }
+
+a{
+  list-style: none;
+  text-decoration: none;
+  color: rgb(149, 147, 147);
+  font-size: 20px;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+ 
+
+.logo a{
+    font-size: 20px;
+    color: rgb(118, 33, 161);
+    margin-left: 40px;
+    font-size: 24px;
+    
+}
+
+
+.logo a:hover{
+    text-decoration: none;
+}
+
 
 .nav-ul{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
+    list-style: none; 
+    
+}
+
+ 
+.connect-link a{
+    margin-right: 30px;
+    font-size: 20px;
+    color: rgb(139, 75, 203);
+     
+} 
+
+
+.active-link{
+     text-decoration: underline;
+    color: rgb(186, 184, 184);
+    font-weight: bold;
+}
+
+/* hero section */
+
+
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
 }
 
-a{
-    color: grey;
+
+.card-1 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 600px;
+    border: 1px solid rgb(139, 75, 203);
+ 
+}
+
+.card-1{
+    padding: 30px;
+ }
+
+
+#components button{
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid rgb(118, 33, 161);
+    background-color: black;
+
+}
+
+
+#components button:hover{
+    transform: scale(1) translateY(5px);
+    background-color: rgb(56, 5, 82);
+
+ }
+
+#components button a:hover{
     text-decoration: none;
 }
 
-a:hover{
-    color: rgb(165, 163, 163);
+h3{
+    color: #d0bfff;
 }
 
-.logo-text{
-    color: #6f4161;
-    font-size: 30px;
-    margin-top: 20px;
- }
+h1{
+    color: #c6b2fb;
+    margin-left: 40px;
+}
 
-.logo-text:hover{
-    color: #6f4161;
+.headings{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 
-.onpage-link{
-    
-    text-decoration: underline;
+ 
+/* LONG DESCRIPTION — DESKTOP */
+
+.long-description {
+    background: #000;
+    color: #d3d5dc;
+    font-family: 'Poppins', sans-serif;
+    padding: 35px 60px 70px;
+    min-height: 100vh;
 }
 
-.onpage-link:hover{
-    color: rgb(86, 17, 196);
-    text-decoration: underline;
- }
+/* Title */
 
- .connect-link{
-     color: rgb(108, 41, 215);
-  }
+.timeline-title {
+    text-align: center;
+    color: #cbb3ff;
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin: 0 0 48px;
+}
 
-  .connect-link:hover{
-     color: rgb(108, 41, 215);
+/* Timeline container */
 
-  }
+.timeline {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+
+/* Timeline entries */
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 76px;
+}
+
+/* Purple dots */
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -5px;
+    width: 22px;
+    height: 22px;
+    background: #7041e8;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* Vertical lines */
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    bottom: 0;
+    left: 5px;
+    width: 2px;
+    background: #7041e8;
+}
+
+/* Last timeline entry */
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item:last-child::after {
+    height: 110px;
+    bottom: auto;
+}
+
+/* Description text */
+
+.timeline-content p {
+    margin: 0;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    font-weight: 900;
+}
+
+/* Project button */
+
+.project-btn {
+    display: inline-block;
+    margin-top: 55px;
+    padding: 6px 9px;
+    border: 2px solid #66518d;
+    border-radius: 10px;
+    background: #9873f5;
+    color: #29213f;
+    font-size: 1.15rem;
+    font-weight: 900;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.project-btn:hover {
+    background: #b49aff;
+    transform: translateY(-3px);
+}
+ 
+ 
+ 
+/* footer section */
+
+.footer-components{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+ 
+
+.socials-link img{
+    width: 35px;
+    height: 35px;
+}
 
 
-  
+
+/* Smaller screens only */
+
+@media (max-width: 600px) {
+    .long-description {
+        padding: 30px 20px 45px;
+    }
+
+    .timeline-title {
+        font-size: 1.7rem;
+    }
+
+    .timeline-content p {
+        font-size: 1.05rem;
+        line-height: 1.4;
+    }
+
+    .timeline-item {
+        padding-bottom: 45px;
+    }
+
+    .project-btn {
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+}
+
+
+

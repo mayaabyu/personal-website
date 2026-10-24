@@ -1,4 +1,4 @@
-*{
+  *{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -6,70 +6,63 @@ body{
     background-color: black;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
-nav{
+/* ========= navgation bar ======== */
+ nav{
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    justify-content: space-around;
-    border-bottom: 1px solid white;
+    justify-content: space-between;
+     padding: 25px 8%;
+     align-items: center;
 }
+
+a{
+  list-style: none;
+  text-decoration: none;
+  color: rgb(149, 147, 147);
+  font-size: 20px;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+ 
+
+.logo a{
+    font-size: 20px;
+    color: rgb(118, 33, 161);
+    margin-left: 40px;
+    font-size: 24px;
+    
+}
+
+
+.logo a:hover{
+    text-decoration: none;
+}
+
 
 .nav-ul{
     display: flex;
     flex-direction: row;
-    gap: 30px;
-
+    gap: 40px;
+    list-style: none; 
+    
 }
 
-a{
-    color: grey;
-    text-decoration: none;
-}
-
-a:hover{
-    color: rgb(165, 163, 163);
+ 
+.connect-link a{
+    margin-right: 30px;
+    font-size: 20px;
+    color: rgb(139, 75, 203);
     text-decoration: underline;
-}
+} 
 
-.logo-text{
-    color: #6f4161;
-    font-size: 30px;
-    margin-top: 20px;
- }
-
-.logo-text:hover{
-    color: #6f4161;
-}
-
-
-.onpage-link{
-     text-decoration: underline;
-}
-
-.onpage-link:hover{
-     text-decoration: underline;
- }
-
-.connect-link{
-     color: rgb(108, 41, 215);
-     text-decoration: underline;
-  }
-
-  .connect-link:hover{
-     color: rgb(108, 41, 215);
-     text-decoration : underline;
-  }
-
-
-
-
-
-
-
-
-
+  
+/* hero-section */
   .hero-components{
     display: flex;
     flex-direction: row;

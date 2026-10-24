@@ -1,4 +1,4 @@
-*{
+  *{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -6,180 +6,194 @@ body{
     background-color: black;
     margin: 0;
     padding: 0;
+    color: white;
 }
-   /* navgations */
-nav{
+
+/* ========= navgation bar ======== */
+ nav{
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    justify-content: space-around;
+    justify-content: space-between;
+     padding: 25px 8%;
+     align-items: center;
 }
+
+a{
+  list-style: none;
+  text-decoration: none;
+  color: rgb(149, 147, 147);
+  font-size: 20px;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+ 
+
+.logo a{
+    font-size: 20px;
+    color: rgb(118, 33, 161);
+    margin-left: 40px;
+    font-size: 24px;
+    
+}
+
+
+.logo a:hover{
+    text-decoration: none;
+}
+
 
 .nav-ul{
     display: flex;
     flex-direction: row;
-    gap: 30px;
-
-}
-
-a{
-    color: grey;
-    text-decoration: none;
-}
-
-a:hover{
-    color: rgb(165, 163, 163);
-}
-
-.logo-text{
-    color: #6f4161;
-    font-size: 30px;
-    margin-top: 20px;
- }
-
-.logo-text:hover{
-    color: #6f4161;
-}
-
-
-.onpage-link{
-     text-decoration: underline;
-}
-
-.onpage-link:hover{
-     text-decoration: underline;
- }
-
-.connect-link{
-     color: rgb(108, 41, 215);
-  }
-
-  .connect-link:hover{
-     color: rgb(108, 41, 215);
-
-  }
-
-
- /* hero section */
-
-
- .featured-projects{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 20px;
- }
-
-
-/* the furniture website project */
- .project1{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 700px;
-    border: 1px solid white; 
-    border-radius: 10px;
-    margin-top: 40px;
-    justify-items: center;
-    padding: 20px;
-    box-shadow: 5px 3px 3px rgb(122, 20, 181);
-
-
- }
-
- h1{
-    color: white;
-    font-weight: bolder;
-    font-size: x-large;
- }
-
- h3{
-    color: white;
- }
-
- h4{
-    color: white;
- }
-
-
- .project1 img{
-    width: 290px;
-    height: 130px;
- }
-
- /* the upcoming websites */
-
- .project2{
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
-
- }
-
- .card{
-   width: 300px;
-   height: 400px;
-   border: 1px solid rgb(236, 225, 239);
-   box-shadow: 5px 3px 3px rgb(122, 20, 181);
-   text-align: center;
-   margin-top: 20px;
-   border-radius: 20px;
- }
-
- .card h2{
-   color: grey;
- }
-
- .card h3{
-   text-align: center;
-   margin-top: 40px;
-   color: rgb(95, 102, 109);
-   font-weight: lighter;
- }
-
- /* footer area */
-
-
-.links{
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-components{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 200px;
-}
-
-.links{
-    display: flex;
-    flex-direction: row;
     gap: 40px;
-    color: gray;
+    list-style: none; 
+    
 }
-
-.links a{
-    color: #534f52;
-    text-decoration: none;
-    list-style: none;
-}
-
-.links a:hover{
-    text-decoration: underline;
-}
-
-.socials-link img{
-
-    width: 35px;
-    height: 35px;
-}
-
-
 
  
 
+.active-link{
+    text-decoration: underline;
+    color: rgb(186, 184, 184);
+    font-weight: bold;
+}
 
+.connect-link a{
+    margin-right: 30px;
+    font-size: 20px;
+    color: rgb(139, 75, 203);
+} 
 
+/* hero section */
+
+.hero-components{
+    padding: 50px;
+}
+
+ .hero-components img{
+    width: 130vh;
+    height: 58vh;
+    border-radius: 10px;
+    
+ }
+
+ .hero-text h1{
+    color: #d0bfff;
+    margin-left: 30px;
+     
+ }
+
+ .hero-text h3{
+    color: grey;
+ }
+
+ .hero-img{
+    padding: 20px;
+    border: 2px solid rgb(118, 33, 161);
+    width: 130vh;
+    height: 58vh;
+    border-radius: 10px;
+ }
+
+ .website-components{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: rgb(129, 36, 175);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ .about-mywebsite{
+    color: #d0bfff;
+    align-items: center;
+    padding: 20px;
+    margin-left: 30px;
+
+ }
+
+ h5{
+    color: rgb(124, 122, 122);
+ }
+
+ .about-mywebsite button{
+     height: 40px;
+    border-radius: 13px;
+    background-color: #9775fa;
+    margin-left: 10px;
+
+ }
+
+ .about-mywebsite a:hover{
+    text-decoration: none;
+ }
+
+ .about-mywebsite a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+ }
+
+.container h1 {
+   text-align: center;
+}
+
+.card-container{
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+}
+
+.card{
+   width: 200px;
+   height: 300px;
+   border-radius: 20px;
+
+}
+
+.card img{
+    width: 200px;
+   height: 300px;
+   border-radius: 20px;
+
+}
+
+/* project features */
+
+.project-features h3 {
+    color: #cbb3ff;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.project-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 60px 28px;
+}
+
+.project-features li {
+    position: relative;
+    color: #cbb3ff;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 22px;
+    padding-left: 38px;
+}
+
+/* Purple circles */
+
+.project-features li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    background-color: #7041e8;
+    border-radius: 50%;
+}
