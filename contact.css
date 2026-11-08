@@ -1,203 +1,356 @@
-  *{
-    font-family: Arial, Helvetica, sans-serif;
-}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
 
-body{
+ body{
     background-color: black;
-    margin: 0;
-    padding: 0;
     color: white;
-}
+    font-family: 'Roboto', sans-serif;
+ }
+     
 
-/* ========= navgation bar ======== */
- nav{
+
+html{
+    scroll-behavior: smooth;  
+}
+ /* navbar styles */
+
+nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-     padding: 25px 8%;
-     align-items: center;
+    gap: 5rem;
+    padding: 26px 8%;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid #022a65;
 }
 
+nav ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    gap: 30px;
+    color: #228be6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;  
+}
+ 
 a{
   list-style: none;
   text-decoration: none;
-  color: rgb(149, 147, 147);
+  color:  #228be6;
   font-size: 20px;
+  cursor: pointer;
+  font-weight: 300;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+/* navbar styles */
 a:hover{
-    text-decoration: underline;
+    color: #6bb7d5;
+    transition: 0.5s;  
 }
- 
+ .logo{
+    margin-right: 50px;
+ }
 
-.logo a{
-    font-size: 20px;
-    color: rgb(118, 33, 161);
-    margin-left: 40px;
-    font-size: 24px;
-    
+.logo img{
+    width: 88px;
+    height: 56px;
+    margin-right: 50px;
+ } 
+
+.connect-link{
+    color: #a5d8ff; 
+    text-decoration: underline;  
 }
-
-
-.logo a:hover{
-    text-decoration: none;
-}
-
-
-.nav-ul{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    list-style: none; 
-    
+.nav-main-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
- 
-.connect-link a{
-    margin-right: 30px;
-    font-size: 20px;
-    color: rgb(139, 75, 203);
-    text-decoration: underline;
-} 
-
-  
-/* hero-section */
-  .hero-components{
-    display: flex;
-    flex-direction: row;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    justify-content: center;
-  }
-
-  h1{
-    color: white;
-  }
-
-  strong{
-     color: rgb(108, 41, 215);
-  }
-   
-  .hero-text{
-    align-self: center;
-  }
-
-  .workin-ppl-img{
-    align-self: center;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-    margin-top: 30px;
-    z-index: 2;
-    margin-left: 300px
-  }
-
-  .workin-ppl-img img{
-    width: 740px;
-    height: 510px;
-    
-  }
-
- .container {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 40px;
-}
-
-.main-heading {
-    font-size: 3.5rem;
-    font-weight: 400;
-    margin-bottom: 60px;
-    line-height: 1.2;
-}
-
-.main-heading .highlight {
-    color: #b71c1c;  
-}
-
-.main-heading .sub-heading {
-    padding-left: 200px;  
-}
-
-.content-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 50px;
-    align-items: start;
-}
-
- .bio-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #b3b3b3;
-    max-width: 400px;
-}
-
- .contact-details {
+/* main contents */
+.main-section-profile{
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.profile img{
+    width: 290px;
+    height: 290px;
+    border-radius: 150px;
+    border: 1px solid #022a65;
 }
 
-.contact-item {
-    display: flex;
-    align-items: flex-end;
-    border-bottom: 2px solid #555;  
-    padding-bottom: 8px;
+.texts h1{
+    font-size: 50px;
+    padding: 10px;
+}
+.texts p{
+    color:#bbb;
 }
 
-.contact-item .label {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-    min-width: 150px;
+/* contact components */
+body {
+  background-color: #080b13;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #ffffff;
+  padding: 40px;
 }
 
-.contact-item .value {
-    font-size: 1.2rem;
-    text-decoration: none;
+.contact-section {
+  max-width: 680px;
+  margin: 0 auto;
 }
 
-.text-red {
-    color: #c62828;
+.section-title {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 24px;
+  margin-bottom: 12px;
 }
 
-/* footer area */ 
-
-.links{
-    display: flex;
-    flex-direction: row;
+/* Base Card Style */
+.card {
+  background-color: #0f1624;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, background-color 0.2s;
 }
 
+/* Icon Box */
+.icon-box {
+  background-color: #1a2333;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+/* Details Section inside Cards */
+.card-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-label, .username {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.card-value, .platform-name {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+/* Email Specific Styling */
+.email-card {
+  margin-bottom: 28px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-copy {
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+.btn-send {
+  background-color: #6366f1;
+  color: #ffffff;
+}
+
+/* Social Grid Layout */
+.social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.social-card:hover {
+  border-color: #334155;
+  background-color: #131c2e;
+}
+
+.external-icon {
+  color: #64748b;
+  font-size: 18px;
+  margin-left: auto;
+}
+
+.social-card:hover .external-icon {
+  color: #94a3b8;
+}
+/* footer section */
 .footer-components{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 200px;
+  padding: 5rem;
+  text-align: center; 
+   
+}
+.footer-components p{
+  color: #adb3ba;
+}
+ 
+
+/* responsove design */
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header nav {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 16px 5%;
+    }
+
+    .nav-main-content ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        padding: 0;
+    }
+
+    .main-section {
+        padding: 48px 5%;
+    }
+
+    .main-section-profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .profile img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texts p {
+        display: inline;
+        line-height: 1.7;
+    }
+
+    .contact-components,
+    .contact-section {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .email-card {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .social-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .social-card {
+        min-width: 0;
+    }
+
+    .footer-components {
+        padding: 24px 5%;
+        text-align: center;
+    }
 }
 
-.links{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    color: gray;
+@media (max-width: 480px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-main-content ul {
+        gap: 10px 16px;
+    }
+
+    .main-section {
+        padding: 32px 5%;
+    }
+
+    .main-section-profile h1 {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+    }
+
+    .email-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-group {
+        width: 100%;
+    }
+
+    .button-group .btn {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-card {
+        width: 100%;
+    }
 }
-
-.links a{
-    color: #534f52;
-    text-decoration: none;
-    list-style: none;
-}
-
-.links a:hover{
-    text-decoration: underline;
-}
-
-.socials-link img{
-
-    width: 35px;
-    height: 35px;
-}
-
-
